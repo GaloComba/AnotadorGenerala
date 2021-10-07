@@ -1,0 +1,183 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="about">
+    <div class="page-content">
+        <div class="block-title text-align-center"><h1>PUNTAJES</h1></div>
+        <div class="block block-strong">
+            <div class="row">
+                <div class="col-33"> </div>
+                <div class="col-33 text-align-center" ><h1 id="jugador1"></h1> </div>
+                <div class="col-33 text-align-center" ><h1 id="jugador2"></h1> </div>
+            </div>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">1</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup" id="dad11"><h2 id="da11"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup3" id="dad12"><h2 id="da21"></h2></button></div> 
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">2</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup" id="dad21"><h2 id="da12"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup3" id="dad22"><h2 id="da22"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">3</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup" id="dad31"><h2 id="da13"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup3" id="dad32"><h2 id="da23"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">4</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup" id="dad41"><h2 id="da14"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup3" id="dad42"><h2 id="da24"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">5</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup" id="dad51"><h2 id="da15"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup3" id="dad52"><h2 id="da25"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">6</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup" id="dad61"><h2 id="da16"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup3" id="dad62"><h2 id="da26"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">ESCALERA</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup2" id="escalera1"><h2 id="esc1"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup4" id="escalera2"><h2 id="esc2"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">FULL</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup2" id="full1"><h2 id="f1"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup4" id="full2"><h2 id="f2"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">POKER</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup2" id="poker1"><h2 id="pok1"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup4" id="poker2"><h2 id="pok2"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">GENERALA</button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup2" id="generala1"><h2 id="gen1"></h2></button></div>
+                <div class="col-33" ><button class="button button-outline popup-open" data-popup=".my-popup4" id="generala2"><h2 id="gen2"></h2></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-33">
+                    <button class="col button button-fill button-round">TOTAL</button></div>
+                <div class="col-33" ><button class="button" id=><h2 id="total1"></h1></button></div>
+                <div class="col-33" ><button class="button" id=><h2 id="total2"></h1></button></div>
+            </div></br>
+            <div class="row">
+                <div class="col-50"><button class="col button button-fill button-round" id="terminar">TERMINAR</button></div>
+                <div class="col-50"><button class="col button button-fill button-round" id="limpiar">LIMPIAR</button></div>
+            </div>
+            <!-- And somewhere in DOM -->
+            <div class="popup my-popup">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title" id="pop"></div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close " ><i class="icon icon-back "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content popup-close" id="volver1">
+                            <div class="block">
+                                <button class="col button button-fill" id="d11">1</button></br>
+                                <button class="col button button-fill" id="d12">2</button></br>
+                                <button class="col button button-fill" id="d13">3</button></br>
+                                <button class="col button button-fill" id="d14">4</button></br>
+                                <button class="col button button-fill" id="d15">5</button></br>
+                                <button class="col button button-fill" id="d16">X</button></br>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup my-popup3">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title" id="pop3"></div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close" ><i class="icon icon-back"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content popup-close"id="volver3">
+                            <div class="block">
+                                <button class="col button button-fill" id="d21">1</button></br>
+                                <button class="col button button-fill" id="d22">2</button></br>
+                                <button class="col button button-fill" id="d23">3</button></br>
+                                <button class="col button button-fill" id="d24">4</button></br>
+                                <button class="col button button-fill" id="d25">5</button></br>
+                                <button class="col button button-fill" id="d26">X</button></br>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup my-popup2">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title" id="pop2"></div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close" ><i class="icon icon-back"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content popup-close" id="volver2">
+                            <div class="block">
+                                <button class="col button button-fill" id="op11">SERVIDA</button></br>
+                                <button class="col button button-fill" id="op12">ARMADA</button></br>
+                                <button class="col button button-fill" id="op13">X</button></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup my-popup4">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title" id="pop4"></div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close" ><i class="icon icon-back"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content popup-close" id="volver4">
+                            <div class="block">
+                                <button class="col button button-fill" id="op21">SERVIDA</button></br>
+                                <button class="col button button-fill" id="op22">ARMADA</button></br>
+                                <button class="col button button-fill" id="op23">X</button></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+         
+    </div>
+</div>
